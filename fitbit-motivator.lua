@@ -7,7 +7,7 @@ local TOKEN_SECRET = storage.tokensecret or nil
 local date = os.date('%Y') .. '-' .. os.date('%m') .. '-' .. os.date('%d')
 
 local response = http.request {
-  url = 'http://api.fitbit.com/1/user/-/activities/date/' .. date .. '.json',
+	url = 'http://api.fitbit.com/1/user/-/activities/date/' .. date .. '.json',
 	auth = {
 		oauth = {
 			consumertoken = CONSUMER_KEY,
