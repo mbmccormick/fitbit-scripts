@@ -7,7 +7,7 @@ local TOKEN_SECRET = storage.tokensecret or nil
 local date = os.date('%Y') .. '-' .. os.date('%m') .. '-' .. os.date('%d')
 
 function check_battery()
-  local response = http.request {
+	local response = http.request {
 		url = 'http://api.fitbit.com/1/user/-/devices.json',
 		auth = {
 			oauth = {
