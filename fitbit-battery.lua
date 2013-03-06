@@ -5,7 +5,7 @@ local ACCESS_TOKEN = storage.accesstoken or nil
 local TOKEN_SECRET = storage.tokensecret or nil
 
 local response = http.request {
-  url = 'http://api.fitbit.com/1/user/-/devices.json',
+	url = 'http://api.fitbit.com/1/user/-/devices.json',
 	auth = {
 		oauth = {
 			consumertoken = CONSUMER_KEY,
