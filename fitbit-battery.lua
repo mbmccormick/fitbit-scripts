@@ -20,6 +20,6 @@ local data = json.parse(response.content)
 
 for key, value in pairs(data) do
 	if value.battery == 'Low' then
-		alert.email('Your Fitbit ' .. value.deviceVersion .. ' has a low battery.')
+		alert.sms('Your Fitbit ' .. value.deviceVersion .. ' has a low battery.')
 	end
 end
